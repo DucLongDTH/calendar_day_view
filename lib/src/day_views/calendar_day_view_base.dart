@@ -45,7 +45,7 @@ abstract class CalendarDayView<T extends Object> extends Widget {
         showMoreOnRowButton: showMoreOnRowButton ?? false,
         events: events,
         currentDate: currentDate,
-        categoryTextStyle: categoryTextStyle
+        categoryTextStyle: categoryTextStyle,
         timeTextColor: timeTextColor,
         timeTextStyle: timeTextStyle,
         dividerColor: dividerColor,
