@@ -31,7 +31,6 @@ abstract class CalendarDayView<T extends Object> extends Widget {
     ScrollPhysics? physics,
     ScrollController? controller,
     bool? cropBottomEvents,
-    TextStyle? categoryTextStyle,
   }) =>
       OverFlowCalendarDayView<T>(
         timeTitleColumnWidth: timeTitleColumnWidth ?? 50,
@@ -45,7 +44,6 @@ abstract class CalendarDayView<T extends Object> extends Widget {
         showMoreOnRowButton: showMoreOnRowButton ?? false,
         events: events,
         currentDate: currentDate,
-        categoryTextStyle: categoryTextStyle,
         timeTextColor: timeTextColor,
         timeTextStyle: timeTextStyle,
         dividerColor: dividerColor,
