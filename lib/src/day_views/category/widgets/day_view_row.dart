@@ -76,7 +76,7 @@ class OverflowDayViewRow<T extends Object> extends StatelessWidget {
                         GestureDetector(
                             behavior: HitTestBehavior.translucent,
                             onTap: () {
-                              onTileTap?.call(category, time);
+                              onTileTap?.call(category, time, event);
                             },
                             child:Container(
                             constraints: BoxConstraints(
@@ -158,7 +158,7 @@ class DayViewRow<T extends Object> extends StatelessWidget {
                     behavior: HitTestBehavior.translucent,
                     onTap: (onTileTap == null || event != null)
                         ? null
-                        : () => onTileTap!(category, time),
+                        : () => onTileTap!(category, time, event),
                     child: ConstrainedBox(
                       constraints: BoxConstraints(
                         minWidth: tileWidth,
