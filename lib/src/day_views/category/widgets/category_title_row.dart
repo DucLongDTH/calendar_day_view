@@ -12,6 +12,7 @@ class CategoryTitleRow extends StatelessWidget {
     this.headerDecoration,
     required this.timeColumnWidth,
     this.logo,
+    this.textStyle,
   });
 
   final double rowHeight;

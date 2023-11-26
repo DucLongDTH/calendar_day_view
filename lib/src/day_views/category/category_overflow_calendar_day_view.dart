@@ -216,7 +216,7 @@ class _CategoryOverflowCalendarDayViewState<T extends Object>
                                         widget.horizontalDivider ??
                                             const Divider(height: 0),
                                         CategoryTitleRow(
-                                          textStyle: widget.categoryTextStyle
+                                          textStyle: widget.categoryTextStyle,
                                           rowHeight: rowHeight,
                                           verticalDivider:
                                               widget.verticalDivider,
