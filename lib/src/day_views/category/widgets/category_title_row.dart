@@ -21,6 +21,7 @@ class CategoryTitleRow extends StatelessWidget {
   final BoxDecoration? headerDecoration;
   final Widget? logo;
   final double timeColumnWidth;
+  final TextStyle? textStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +40,7 @@ class CategoryTitleRow extends StatelessWidget {
                       child: Center(
                         child: Text(
                           category.name,
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                          style: textStyle ?? const TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),

@@ -73,7 +73,12 @@ class OverflowDayViewRow<T extends Object> extends StatelessWidget {
                       );
 
                       return [
-                        Container(
+                        GestureDetector(
+                            behavior: HitTestBehavior.translucent,
+                            onTap: () {
+                              onTileTap?.call(category, time);
+                            },
+                            child:Container(
                             constraints: BoxConstraints(
                               minWidth: tileWidth,
                               maxWidth: tileWidth,
@@ -96,7 +101,7 @@ class OverflowDayViewRow<T extends Object> extends StatelessWidget {
                                 ],
                               ),
                             ),
-                          ),
+                          )),
                         verticalDivider ?? const VerticalDivider(width: 0),
                       ];
                     })

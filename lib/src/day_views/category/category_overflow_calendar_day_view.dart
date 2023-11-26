@@ -29,6 +29,7 @@ class CategoryOverflowCalendarDayView<T extends Object> extends StatefulWidget
     this.verticalDivider,
     this.horizontalDivider,
     this.timeTextStyle,
+    this.categoryTextStyle,
     required this.eventBuilder,
     this.onTileTap,
     this.headerDecoration,
@@ -80,6 +81,9 @@ class CategoryOverflowCalendarDayView<T extends Object> extends StatefulWidget
 
   /// time label text style
   final TextStyle? timeTextStyle;
+
+  /// category text style
+  final TextStyle? categoryTextStyle;
 
   /// event builder
   final CategoryDayViewEventBuilder<T> eventBuilder;
@@ -212,6 +216,7 @@ class _CategoryOverflowCalendarDayViewState<T extends Object>
                                         widget.horizontalDivider ??
                                             const Divider(height: 0),
                                         CategoryTitleRow(
+                                          textStyle: widget.categoryTextStyle
                                           rowHeight: rowHeight,
                                           verticalDivider:
                                               widget.verticalDivider,
