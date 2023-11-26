@@ -39,7 +39,7 @@ typedef CategoryDayViewRowBuilder<T extends Object> = Widget Function(
 typedef CategoryDayViewTileTap<T extends Object> = Function(
   EventCategory category,
   DateTime time,
-  T model
+  CategorizedDayEvent<T>? model
 );
 
 /// To build the controller bar on the top of the day view
