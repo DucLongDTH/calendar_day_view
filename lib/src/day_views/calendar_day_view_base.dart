@@ -45,7 +45,7 @@ abstract class CalendarDayView<T extends Object> extends Widget {
         showMoreOnRowButton: showMoreOnRowButton ?? false,
         events: events,
         currentDate: currentDate,
-        categoryTextStyle: categoryTextStyle,
+        categoryTextStyle: categoryTextStyle
         timeTextColor: timeTextColor,
         timeTextStyle: timeTextStyle,
         dividerColor: dividerColor,
@@ -132,6 +132,7 @@ abstract class CalendarDayView<T extends Object> extends Widget {
     BoxDecoration? headerDecoration,
     Widget? logo,
     CategoryDayViewControlBarBuilder? controlBarBuilder,
+    TextStyle? categoryTextStyle,
   }) =>
       CategoryOverflowCalendarDayView(
         events: events,
@@ -154,6 +155,7 @@ abstract class CalendarDayView<T extends Object> extends Widget {
         headerDecoration: headerDecoration,
         logo: logo,
         controlBarBuilder: controlBarBuilder,
+        categoryTextStyle: categoryTextStyle
       );
 
   /// Create [InRowCalendarDayView]
