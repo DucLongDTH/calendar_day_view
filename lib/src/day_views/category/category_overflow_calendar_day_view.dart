@@ -252,7 +252,8 @@ class _CategoryOverflowCalendarDayViewState<T extends Object>
                                                       (event) =>
                                                           event.startInThisGap(
                                                               time,
-                                                              widget.timeGap),
+                                                              widget.timeGap) ||
+                                                          event.startAt(time),
                                                     )
                                                     .toList();
                                                 return OverflowDayViewRow<T>(
